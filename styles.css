@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* Ensure you have an image named background.jpg in your project folder or provide a path to your background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 60px;
+}
+
+.section:nth-child(even) {
+    background-color: rgba(240, 248, 255, 0.8);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* About Section */
+.profile {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.profile .info p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Skills Section */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Contact Section */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
